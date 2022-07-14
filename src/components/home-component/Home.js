@@ -6,7 +6,7 @@ function Home(){
         <section className="home__banner">
                 <div className="line">
                     <h1 className="line__text">
-                        Home
+                        YOUR
                     </h1>
                 </div>
                 <h1 className="home__banner_text">Home</h1>
