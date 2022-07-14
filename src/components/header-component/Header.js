@@ -26,7 +26,7 @@ const theme = createTheme({
 const links = {
 
     public: [ 
-    {title: "Home", path: '/'},
+    {title: "Home", path: '/YourHome'},
     ],
 
     auth:[ 

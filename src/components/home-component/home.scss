@@ -29,7 +29,7 @@ height: 600px;
 @keyframes animate-line{
    
     from{ 
-        left: -120px;
+        left: 0;
         background: rgba(15,185,196,1);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -127,8 +127,33 @@ height: 600px;
         
          }
      }
-     .line__text{
-        font-size: 70px;
+     .line{
+        left:-80px;
+        width: 80px;
+        &__text{
+            font-size: 70px;
+         }
      }
+     
+}
+
+
+@media (max-width: 450px){
+    .home__banner{
+    &_text{
+        text-align: center;
+        font-size: 90px;
+        font-weight: 800;   
+        color: transparent;
+   
+    }
+}
+.line{
+   left:-50px;
+   width: 50px;
+   &__text{
+       font-size: 50px;
+    }
+}
 }
 

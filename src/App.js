@@ -24,7 +24,6 @@ return (
     <BrowserRouter>
        <Header/>
           <Routes>
-            <Route path="/" element={<Home/>}/>
             <Route path="/YourHome" element={<Home/>}/>
             <Route path="/chats/*" element={<PrivateRoute session={session} to="/login"><ChatPage/></PrivateRoute>}/>
             <Route path="/profile" element={<PrivateRoute session={session} to="/login"><Profile/></PrivateRoute>}/>
