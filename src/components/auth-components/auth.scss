@@ -1,0 +1,27 @@
+.auth__form{
+    display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      padding: 14px 20px;
+      background-color: #fff;
+      width: 300px;
+      .auth__header{
+          text-align: center;
+      }
+      .auth__input{
+          margin-top: 12px;
+      }
+      .auth__submit{
+          margin-top: 12px;
+      }
+      .error__auth{
+          color: red;
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: clip;
+        }
+        .auth__helperText{
+        color: red;
+        font-size: 12px;
+        }
+  }

@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(240, 240, 240);
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.error404{
+  text-align: center;
+}
+.content{
+  height: 100%;
+  padding-top: 30px;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 620px){
+  .content, .container {
+      padding-left: 28px;
+      padding-right: 28px;
+  }
+
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #fff, #e4e4e4);
+  border: 1px solid #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(201, 201, 201);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+

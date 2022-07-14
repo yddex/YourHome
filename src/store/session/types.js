@@ -1,0 +1,2 @@
+//types
+export const UPDATE_SESSION = "SESSION:UPDATE_SESSION"
