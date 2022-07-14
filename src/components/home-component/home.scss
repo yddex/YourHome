@@ -1,4 +1,6 @@
 .home__banner{
+    pointer-events: none;
+    user-select: none;
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
    margin: 0 auto;
@@ -13,12 +15,13 @@ width: 100%;
 align-items: center;
 height: 600px;
     &_text{
-        z-index: 3000;
         text-align: center;
         font-size: 240px;
         font-weight: 800;   
         color: transparent;
-         
+        &>span{
+            z-index: -2;
+        }
     }
 
 }
@@ -28,7 +31,6 @@ height: 600px;
     from{ 
         left: -120px;
         background: rgba(15,185,196,1);
-
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -69,9 +71,8 @@ height: 600px;
     opacity: 0.7;
     position: absolute;
     top: 0;
-    z-index: -1;
     background: rgba(28,26,99,1);
-   
+    z-index: -1;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -107,6 +108,14 @@ height: 600px;
     }
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 750px){
     .home__banner{
        
@@ -122,3 +131,4 @@ height: 600px;
         font-size: 70px;
      }
 }
+

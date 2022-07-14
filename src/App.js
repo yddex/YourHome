@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import Header from "./components/header-component/Header"
@@ -31,7 +31,7 @@ return (
             <Route path="/logout" element={<PrivateRoute session={session} to="/logout"><Logout/></PrivateRoute>}/>
             <Route path="/signup" element={<PublicRoute session={session} to="/profile"><SignUpPage/></PublicRoute>}/>
             <Route path="/login" element={<PublicRoute session={session} to='/profile'><LoginPage/></PublicRoute>}/>
-            <Route path="/*" element={<h1 className="error404">404</h1>} />
+            <Route path="/*" element={<Navigate to="/" replace={true} /> }/>
           </Routes>
     </BrowserRouter>
   </div>
